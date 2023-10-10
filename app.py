@@ -2,8 +2,8 @@ from flask import Flask, request, render_template
 from azure.storage.blob import BlobServiceClient
 
 app = Flask(__name__)
-connection_string = "<YOUR_AZURE_STORAGE_CONNECTION_STRING>"
-container_name = "<YOUR_CONTAINER_NAME>"
+connection_string = "DefaultEndpointsProtocol=https;AccountName=devappservicestorage;AccountKey=2SMfZWy8k46BxjectElHvDfcEWgJ9U3QYCVVf5Xzn6FcVL4D0u+RkiVqt10xwLTT08Ng26G9+WPN+ASt3n5+lw==;EndpointSuffix=core.windows.net"
+container_name = "dev-appservice-storage-container"
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
